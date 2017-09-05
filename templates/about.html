@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<header>
+  <div class="container">
+    <div id="brand">
+      <h1>Tars</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li class="current"><a href="{{ url_for('about') }}">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<section id="About">
+	<div class="container">
+		<article id="main-col">
+			<h1 class=about-title>About TARS</h1>
+				<p>
+					TARS is an attempt to learn humor through deep learning. TARS was trained on short jokes to learn how to generate new jokes from scratch, and that is precisely what he is doing when you click on the <strong>Generate Joke</strong> button.
+				</p>
+			<h1 class="about-title"> The model</h1>
+				<p>
+					TARS consists of an word embedding followed by an 1-layer LSTM-network with 412 hidden nodes and finally an classifier that outputs a probability distribution over the vocabulary. The cells used were bidirectional which means that TARS both looks into the past words but also the possible future predictions. When doing the prediction the distribution over possible words given the ones before (the conditional distribution of the next words given the earlier ones) are modeled according the multinomial distribution. <br><br>
+					For more details about TARS have a look at: <a href="https://github.com/Tranhd/TARS" target="_blank">https://github.com/Tranhd/TARS</a> 
+				</p>
+			<h1 class="about-title">Code</h1>
+				<p>
+					Both the code for TARS and the Website, deployed through flask, are available at  <a href="https://github.com/Tranhd/TARS" target="_blank">https://github.com/Tranhd/TARS</a>  and  <a href="https://github.com/Tranhd/Flask_TARS" target="_blank">https://github.com/Tranhd/Flask_TARS</a>, respectively.
+				</p>
+		</article>
+	</div>
+</section>
+
+{% endblock %}

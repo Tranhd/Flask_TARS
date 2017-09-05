@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Saira');
+
+body{
+  font-family: Arial, Helvetica, sans-sarif;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  background-color: #FFFFFF;
+}
+
+/* Global */
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.button_1 {
+  height: 48px;
+  width: 200px;
+  font-family: 'Saira', sans-serif;
+  background: #000000;
+  border: 0;
+  color: #FFFFFF;
+  font-size: 22px;
+  border-radius: 38px;
+  font-weight: bold;
+}
+
+.button_1:hover {
+  background-color: #999999;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header{
+  background: #FFFFFF;
+  color: #000000;
+  padding-top: 10px;
+  padding-bottom: 10px; 
+}
+
+header a{
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+header li{
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header #brand{
+  float: left;
+  font-family: 'Roboto', sans-serif;
+  font-weight bold;
+  font-size: 40px;
+  margin-top: 0px;
+  padding-top: 0px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+header h1 {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+header nav{
+  float: right;
+  margin-top: 10px;
+}
+
+header .highlight, header .current a{
+  font-weight: bold;
+}
+
+header a:hover {
+  color: #999999;
+  font-weight: bold;
+}
+
+#subtitle {
+  font-size: 11px;
+  font-weight: bold;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  text-transform: none;
+}
+
+/* Jokegenerator */
+
+#boxes {
+  margin-top: 0px;
+}
+
+#boxes .box{
+  float: left;
+  text-align: center;
+  width: 45%;
+  height: 300px;
+  vertical-align: middle;
+  padding: 10px;
+  background-color: #FFFFFF;
+  margin: 10px;
+}
+
+.joke {
+  margin-top: 100px;
+}
+
+.joke p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* About article */
+article #main-col{
+  float: left;
+  width: 65%;
+}
+
+/* Footer */
+
+footer {
+  padding: 5px;
+  margin-top: 140px;
+  color: #FFFFFF;
+  background-color: #000000;
+  text-align: center;
+}
+
+/* Media */
+@media(max-width: 1080px){
+  header #brand,
+  header nav,
+  header nav li{
+    float: none;
+    text-align: center;
+    width: 100%
+  }
+
+  #boxes .box{
+    margin-top: 0px;
+    float: none;
+    text-align: center;
+    width: 94%;
+    height: 150px;
+  }
+
+  .joke {
+    margin-top: 50px;
+  }
+
+
+  #boxes .box img{
+    height: 150px;
+  }
+
+  header{
+    padding-bottom: 20px;
+  }
+}
+

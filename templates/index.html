@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<header>
+  <div class="container">
+    <div id="brand">
+      <h1>Tars</h1>
+    </div>
+    <nav>
+      <ul>
+        <li class="current"><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section id="boxes">
+  <div class="container">
+    <div class="box" id="jokebox">
+      <div class="joke">
+        <form action="/generatejoke" method="POST">
+          <button class="button_1" type="generatejoke">Generate Joke</button> 
+        </form>
+        <p>{{joke}}</p>
+      </div>
+    </div>
+    <div class="box">
+      <a href="https://pixabay.com/sv/robot-mustasch-vetenskap-mekaniska-161368/" target="_blank">
+        <img src="./static/img/robot.png" height="300">
+      </a>
+      <div id="subtitle">A deep learning powered Humorbot</div>
+    </div>
+  </div>    
+</section>
+{% endblock %}
